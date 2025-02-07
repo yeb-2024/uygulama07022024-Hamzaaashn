@@ -23,6 +23,7 @@ public class Anasayfa implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == button)
         {
+            frame.dispose(); //Sayfayı kapat
             ProfilSayfası profilSayfası = new ProfilSayfası();
         }
     }
