@@ -12,15 +12,19 @@ public class ProfilSayfası {
 
         frame.add(label);
 
-        ImageIcon imageIcon = new ImageIcon("fatih_sultan_mehmet");
-
+        ImageIcon imageIcon = new ImageIcon("fatih_sultan_mehmet.jpg");
+        Image newımage = imageIcon.getImage().getScaledInstance(500,166,Image.SCALE_SMOOTH);
+        ImageIcon ımage = new ImageIcon(newımage);
         JLabel label2 = new JLabel();
-        label2.setIcon(imageIcon);
-
-        frame.add(label2);
+        label2.setIcon(ımage);
 
         JLabel label3 = new JLabel();
         label3.setText("Karizmatik Kaslı Asil Duruşuyla İçerisinde Pek De Gizli Olmayan Savaşçı Ve Lider Ruhuyla KOSTANTİNAPOLİSİ İSTANBULA Çeviriren Bir OSMANLI İMPARATORU");
+
+        frame.add(label2);
+        frame.add(label3);
+
+
         frame.setSize(500,500);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setTitle("Profil Sayfası");
